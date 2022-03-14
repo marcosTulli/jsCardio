@@ -17,20 +17,8 @@ function findTotal(my_list) {
   let evenSum = even.reduce((a, b) => a + b);
   let result = evenSum - oddSum;
 
-  return { result, oddSum, evenSum };
+  return result;
 }
 
 let array = [80, 30, 30];
 console.log(findTotal(array));
-// FIX WHEN NO ODDS THROWS ERROR
-
-// function findTotal(my_list) {
-//   const isEven = (n) => n % 2 === 0;
-//   const isOdd = (n) => !isEven(n);
-//   const sum = (a, b) => a + b;
-//   const oddSum = my_list.filter(isOdd).reduce(sum);
-//   const evenSum = my_list.filter(isEven).reduce(sum);
-//   return oddSum - evenSum;
-// }
-
-// findTotal(array);

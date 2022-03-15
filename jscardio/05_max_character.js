@@ -1,9 +1,27 @@
 // CHALLENGE 5: MAX CHARACTER
 // Return the character that is most common in a string
 // ex. maxCharacter('javascript') == 'a'
-function maxCharacter(str) {}
+function maxCharacter(str) {
+  let maxNum = 0;
+  let maxChar = "";
+  let charMap = {};
+  str.split("").forEach((char) => {
+    if (charMap[char]) {
+      charMap[char]++;
+    } else {
+      charMap[char] = 1;
+    }
+  });
 
+  for (let char in charMap) {
+    if (charMap[char] > maxNum) {
+      maxNum = charMap[char];
+      maxChar = char;
+    }
+  }
+  return maxChar;
+}
 // Call Function
-const output = maxCharacter("hello");
+const output = maxCharacter("javascript");
 
 console.log(output);

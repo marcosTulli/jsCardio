@@ -3,7 +3,30 @@
 // ex. reverseString('hello') === 'olleh'
 
 function reverseString(str) {
-  return "Let's Start";
+  // SOLUTION 1    Reverse
+  // return str.split("").reverse().join("");
+  //
+  // SOLUTION 2    For loop
+  // let revString = "";
+  // for (let i = str.length - 1; i >= 0; i--) {
+  //   revString = revString + str[i];
+  // }
+  // return revString;
+  //
+  // SOLUTION 3  For of loop
+  // let revString = "";
+  // for (let char of str) {
+  //   revString = char + revString;
+  // }
+  // return revString;
+  //
+  // SOLUTION 4 For Each Loop
+  // let revString = "";
+  // str.split("").forEach((char) => (revString = char + revString));
+  // return revString;
+  //
+  // SOLUTION 5  Reduce
+  // return str.split("").reduce((a, b) => b + a, "");
 }
 
 // Call Function

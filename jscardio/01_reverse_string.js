@@ -26,7 +26,7 @@ function reverseString(str) {
   // return revString;
   //
   // SOLUTION 5  Reduce
-  // return str.split("").reduce((a, b) => b + a, "");
+  return str.split("").reduce((a, b) => b + a, "");
 }
 
 // Call Function

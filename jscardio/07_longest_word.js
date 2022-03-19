@@ -17,13 +17,13 @@ function longestWord(sen) {
   );
 
   if (longestWordArr.length === 1) {
-    return longestWord[0];
+    return longestWordArr[0];
   } else {
     return longestWordArr;
   }
 }
 
 // Call Function
-const output = longestWord("hola gente, me llamo  estebanestevanez");
+const output = longestWord("Hola mi gente linda");
 
 console.log(output);

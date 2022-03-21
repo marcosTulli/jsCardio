@@ -9,7 +9,12 @@ function flattenArray(arrays) {
   // SOLUTION 2
   //
   //
-  return [].concat.apply([], arrays);
+  //   return [].concat.apply([], arrays);
+
+  // SOLUTION 3
+  //
+  //
+  return [].concat(...arrays);
 }
 
 const output = flattenArray([[1, 2], [3, 4], [5, 6], [7]]);

@@ -3,9 +3,14 @@
 // ex.
 // evenOddSums([50, 60, 60, 45, 71]) == [170, 116]
 
-function evenOddSums() {}
+function evenOddSums(list) {
+  let evens = 0;
+  let odds = 0;
+  list.forEach((num) => (num % 2 === 0 ? (evens += num) : (odds += num)));
+  return [evens, odds];
+}
 
 // Call Function
-const output = evenOddSums("hello");
+const output = evenOddSums([50, 60, 60, 45, 71]);
 
 console.log(output);

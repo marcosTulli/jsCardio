@@ -5,9 +5,19 @@
 // missingLetters("abcdefghjklmno") == "i"
 // missingLetters("abcdefghijklmnopqrstuvwxyz") == undefined
 
-function missingLetters() {}
-
+function missingLetters(str) {
+  let character = str.charCodeAt(0);
+  let missing;
+  str.split("").map((char, i) => {
+    if (str.charCodeAt(i) === character) {
+      ++character;
+    } else {
+      missing = String.fromCharCode(character);
+    }
+  });
+  return missing;
+}
 // Call Function
-const output = missingLetters("hello");
+const output = missingLetters("abcdefgi");
 
 console.log(output);

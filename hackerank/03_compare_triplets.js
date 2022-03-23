@@ -12,18 +12,18 @@
 // Given a and b, determine their respective comparison points.
 
 function compareTriplets(a, b) {
-  let aPts = 0;
-  let bPts = 0;
+  let apts = 0;
+  let bpts = 0;
 
   for (let i in a) {
     if (a[i] > b[i]) {
-      aPts += 1;
+      apts += 1;
     } else if (b[i] > a[i]) {
-      bPts += 1;
+      bpts += 1;
     }
   }
 
-  let results = [aPts, bPts];
+  let results = [apts, bpts];
   return results;
 }
 
